@@ -25,6 +25,17 @@ function contarLetras(texto) {
     return contar;
 }
 
-console.log("Hola mundo");
+console.log(contarLetras("hola mundo"));
+
+
+function maximo(a, b, c) {
+    let numeros = [a, b, c];
+
+    numeros.sort((x, y) => x - y);
+
+    return numeros[2];
+}
+
+console.log(maximo(1, 20, 6));
 
 
