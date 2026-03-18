@@ -162,6 +162,8 @@ usuario.activo = true;
 return usuario;
 
 }
+console.log(" ");
+
 console.log("EJ09");
 console.log(`Deberia devolver true:   ${activarUsuario(usuario).activo}`);
 
@@ -181,7 +183,7 @@ function calcularPrecioTotal(productos){
     return suma;
 }
 console.log(" ");
-console.log("EJ09");
+console.log("EJ10");
 console.log(`Deberia devolver 235 :   ${calcularPrecioTotal(productos)} `);
 
 //Parte 4//
@@ -201,4 +203,16 @@ const usuarios = [
 function soloNombres (usuarios){
     return usuarios.map(usuario => " " + usuario.nombre );
 }
+
+console.log(" ");
+console.log("EJ11");
 console.log(`Deberia devolver  Ana, Juan, Pedro :   ${soloNombres (usuarios)} `);
+
+//EJ 12//
+ function soloAdultos(usuarios){
+    return usuarios.filter (usuario =>  usuario.edad >= 18)
+ }
+ 
+console.log(" ");
+console.log("EJ12");
+console.log(`Deberia devolver Juan, Pedro: ${soloAdultos(usuarios).map(usuario => " " + usuario.nombre)}`);
