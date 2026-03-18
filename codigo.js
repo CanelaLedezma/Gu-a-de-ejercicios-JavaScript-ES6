@@ -45,6 +45,7 @@ console.log(" ");
 console.log("EJ02")
 console.log("- Deberia devover 9:  " + contarLetras("hola mundo"));
 console.log(" ");
+
 //EJ03//
 
 function maximo(a, b, c) 
@@ -100,3 +101,20 @@ function sumarArray (numeros) {
 console.log("EJ05");
 console.log("- Deberia devolver 18:  "+ sumarArray([3, 5, 10]));
 
+
+//EJ 6//
+
+function mayorNumero(numeros)
+{
+    let mayorN = numeros[0];
+
+    for (let i = 0; i < numeros.length; i++) {
+        if (numeros[i]>mayorN)
+        {
+            mayorN = numeros[i];
+        }
+}
+        return mayorN;}
+        
+console.log("EJ05");
+console.log("- Deberia devolver 8:  "+mayorNumero([1, 4, 8, 3]));
