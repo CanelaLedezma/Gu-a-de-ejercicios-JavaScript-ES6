@@ -11,7 +11,7 @@ function mayusculaEnLaPrimerLetra (nombre) {
 
     return resultado;
 }
-console.log(resultado);
+console.log(mayusculaEnLaPrimerLetra("JUAN"));
 
 function contarLetras(texto) {
     let contar = 0;
@@ -25,4 +25,6 @@ function contarLetras(texto) {
     return contar;
 }
 
-console.log(contar);
+console.log("Hola mundo");
+
+
