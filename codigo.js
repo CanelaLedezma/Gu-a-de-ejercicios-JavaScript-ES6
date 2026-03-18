@@ -142,6 +142,10 @@ const usuario = {
 function descripcionUsuario(usuario){
 
 }
- console.log(`${usuario.nombre} tiene ${usuario.edad} años.`);
+console.log(" ");
+
+console.log("EJ08");
+
+ console.log(`Deberia devolver Ana tiene 20 años:   ${usuario.nombre} tiene ${usuario.edad} años.`);
 
 
