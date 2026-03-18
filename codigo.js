@@ -115,6 +115,19 @@ function mayorNumero(numeros)
         }
 }
         return mayorN;}
-        
-console.log("EJ05");
+
+console.log(" ");
+console.log("EJ06");
 console.log("- Deberia devolver 8:  "+mayorNumero([1, 4, 8, 3]));
+
+//EJ 7//
+function obtenerPares(numeros)
+{
+    return numeros.filter(n => n % 2 === 0);
+}
+console.log(" ");
+
+console.log("EJ07");
+
+console.log("- Deberia devolver 2, 4, 6:  "+obtenerPares([1,2,3,4,5,6]));
+
