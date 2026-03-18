@@ -157,6 +157,17 @@ console.log("EJ08");
 console.log(`Deberia devolver Ana tiene 20 años:   ${descripcionUsuario(usuario)}`);
 
 //EJ09//
+function activarUsuario(usuario){
+usuario.activo = true;
+return usuario;
+
+}
+console.log("EJ09");
+console.log(`Deberia devolver true:   ${activarUsuario(usuario).activo}`);
+
+
+
+//EJ10//
 const productos = [
 {nombre:"Mouse", precio:10},
 {nombre:"Teclado", precio:25},
@@ -179,4 +190,15 @@ console.log(" ");
 console.log('-----------')
 console.log('~ PARTE 4 ~')
 console.log('-----------')
-//EJ10//
+
+//EJ11//
+const usuarios = [
+{nombre:"Ana", edad:17},
+{nombre:"Juan", edad:25},
+{nombre:"Pedro", edad:30}
+]
+
+function soloNombres (usuarios){
+    return usuarios.map(usuario => " " + usuario.nombre );
+}
+console.log(`Deberia devolver  Ana, Juan, Pedro :   ${soloNombres (usuarios)} `);
