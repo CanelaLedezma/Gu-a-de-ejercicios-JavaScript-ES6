@@ -131,3 +131,17 @@ console.log("EJ07");
 
 console.log("- Deberia devolver 2, 4, 6:  "+obtenerPares([1,2,3,4,5,6]));
 
+
+//EJ 8//
+const usuario = {
+ nombre: "Ana",
+ edad: 20,
+ activo: false
+}
+
+function descripcionUsuario(usuario){
+
+}
+ console.log(`${usuario.nombre} tiene ${usuario.edad} años.`);
+
+
