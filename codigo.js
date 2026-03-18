@@ -216,3 +216,14 @@ console.log(`Deberia devolver  Ana, Juan, Pedro :   ${soloNombres (usuarios)} `)
 console.log(" ");
 console.log("EJ12");
 console.log(`Deberia devolver Juan, Pedro: ${soloAdultos(usuarios).map(usuario => " " + usuario.nombre)}`);
+
+
+//EJ 12//
+function sumaEdades(usuarios) {
+    return usuarios.reduce((total, usuario) => { return total + usuario.edad;}, 0);
+}
+console.log(" ");
+console.log("EJ13");
+console.log("Deberia devolver 72: " + sumaEdades(usuarios));
+
+
