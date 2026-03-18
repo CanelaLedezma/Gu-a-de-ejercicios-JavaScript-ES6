@@ -132,7 +132,16 @@ console.log("EJ07");
 console.log("- Deberia devolver 2, 4, 6:  "+obtenerPares([1,2,3,4,5,6]));
 
 
-//EJ 8//
+
+//PARTE 3//
+
+console.log(" ");
+console.log('-----------')
+console.log('~ PARTE 3 ~')
+console.log('-----------')
+
+//EJ08//
+
 const usuario = {
  nombre: "Ana",
  edad: 20,
@@ -141,11 +150,33 @@ const usuario = {
 
 function descripcionUsuario(usuario){
 
+return ` ${usuario.nombre} tiene ${usuario.edad} años.`;
 }
-console.log(" ");
 
 console.log("EJ08");
+console.log(`Deberia devolver Ana tiene 20 años:   ${descripcionUsuario(usuario)}`);
 
- console.log(`Deberia devolver Ana tiene 20 años:   ${usuario.nombre} tiene ${usuario.edad} años.`);
+//EJ09//
+const productos = [
+{nombre:"Mouse", precio:10},
+{nombre:"Teclado", precio:25},
+{nombre:"Monitor", precio:200}
+]
+function calcularPrecioTotal(productos){
 
+    let suma = 0;
 
+    productos.forEach(productos => { suma += productos.precio });
+    return suma;
+}
+console.log(" ");
+console.log("EJ09");
+console.log(`Deberia devolver 235 :   ${calcularPrecioTotal(productos)} `);
+
+//Parte 4//
+
+console.log(" ");
+console.log('-----------')
+console.log('~ PARTE 4 ~')
+console.log('-----------')
+//EJ10//
