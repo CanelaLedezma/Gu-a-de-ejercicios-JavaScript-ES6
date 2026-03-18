@@ -1,23 +1,39 @@
+//PARTE 1//
+
+//EJ01//
+console.log('-----------')
+console.log('~ PARTE 1 ~')
+console.log('-----------')
 function mayusculaEnLaPrimerLetra (nombre) {
     let resultado = "";
 
     for (let i = 0; i < nombre.length; i++) {
+     
         if (i === 0) {
-            resultado += nombre[i].toUpperCase();
-        } else {
-            resultado += nombre[i].toLowerCase();
+        resultado += nombre[i].toUpperCase();
+        } 
+        else {
+        resultado += nombre[i].toLowerCase();  
         }
+
     }
 
     return resultado;
 }
-console.log("deberia devover Juan: "+mayusculaEnLaPrimerLetra("JUAN"));
+console.log("EJ01")
 
-function contarLetras(texto) {
+console.log("- Deberia devover Juan: "+mayusculaEnLaPrimerLetra("JUAN"));
+
+//EJ02//
+
+function contarLetras(texto) 
+{
     let contar = 0;
 
-    for (let i = 0; i < texto.length; i++) {
-        if (texto[i] !== " ") {
+    for (let i = 0; i < texto.length; i++) 
+        {
+
+        if (texto[i] !== " "){
             contar++;
         }
     }
@@ -25,10 +41,14 @@ function contarLetras(texto) {
     return contar;
 }
 
-console.log("deberia devover 9:  " + contarLetras("hola mundo"));
+console.log(" ");
+console.log("EJ02")
+console.log("- Deberia devover 9:  " + contarLetras("hola mundo"));
+console.log(" ");
+//EJ03//
 
-
-function maximo(a, b, c) {
+function maximo(a, b, c) 
+{
     let numeros = [a, b, c];
 
     numeros.sort((x, y) => x - y);
@@ -36,20 +56,47 @@ function maximo(a, b, c) {
     return numeros[2];
 }
 
-console.log("deberia devover 20: "+maximo(1, 20, 6));
+console.log("EJ03")
+console.log("- Deberia devover 20: "+maximo(1, 20, 6));
+console.log(" ");
 
+//EJ04//
 
 function validarPassword(password) {
     let tieneNumero = false;
 
     for (let i = 0; i < password.length; i++) {
-        if (password[i] >= "0" && password[i] <= "9") {
+
+        if (password[i] >= "0" && password[i] <= "9") 
+        {
             tieneNumero = true;
         }
     }
 
     return password.length >= 8 && tieneNumero;
 }
-console.log("deberia devolver false: "+ validarPassword("hola"));
-console.log("deberia devolver false: "+ validarPassword("holaaaaa"));
-console.log("deberia devolver true:  "+ validarPassword("holaaaaa9"));
+
+console.log("EJ04");
+console.log("- Deberia devolver false: "+ validarPassword("hola"));
+console.log("- Deberia devolver false: "+ validarPassword("holaaaaa"));
+console.log("- Deberia devolver true:  "+ validarPassword("holaaaaa9"));
+
+//PARTE 2//
+
+//EJ 5//
+console.log(" ");
+console.log('-----------')
+console.log('~ PARTE 2 ~')
+console.log('-----------')
+
+function sumarArray (numeros) {
+    
+    let suma = 0;
+
+    numeros.forEach(n => { suma += n });
+
+    return suma;
+}
+console.log("EJ05");
+console.log("- Deberia devolver 18:  "+ sumarArray([3, 5, 10]));
+
