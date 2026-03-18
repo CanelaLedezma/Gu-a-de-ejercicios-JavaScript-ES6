@@ -11,7 +11,7 @@ function mayusculaEnLaPrimerLetra (nombre) {
 
     return resultado;
 }
-console.log(mayusculaEnLaPrimerLetra("JUAN"));
+console.log("deberia devover Juan: "+mayusculaEnLaPrimerLetra("JUAN"));
 
 function contarLetras(texto) {
     let contar = 0;
@@ -25,7 +25,7 @@ function contarLetras(texto) {
     return contar;
 }
 
-console.log(contarLetras("hola mundo"));
+console.log("deberia devover 9:  " + contarLetras("hola mundo"));
 
 
 function maximo(a, b, c) {
@@ -36,6 +36,20 @@ function maximo(a, b, c) {
     return numeros[2];
 }
 
-console.log(maximo(1, 20, 6));
+console.log("deberia devover 20: "+maximo(1, 20, 6));
 
 
+function validarPassword(password) {
+    let tieneNumero = false;
+
+    for (let i = 0; i < password.length; i++) {
+        if (password[i] >= "0" && password[i] <= "9") {
+            tieneNumero = true;
+        }
+    }
+
+    return password.length >= 8 && tieneNumero;
+}
+console.log("deberia devolver false: "+ validarPassword("hola"));
+console.log("deberia devolver false: "+ validarPassword("holaaaaa"));
+console.log("deberia devolver true:  "+ validarPassword("holaaaaa9"));
