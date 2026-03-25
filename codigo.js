@@ -243,3 +243,16 @@ const producto = buscarProducto(productos, "Teclado");
 console.log(`Deberia devolver nombre Teclado, precio 25:
 Nombre: ${producto.nombre}
 Precio: ${producto.precio}`);
+
+//EJ 17//
+function precioMasDe50(productos){
+    return productos.filter(producto => producto.precio > 50);
+}
+const mas50 = precioMasDe50(productos);
+
+console.log(" ");
+console.log("EJ17");
+console.log(`Debería devolver nombre Monitor, precio 200:`);
+mas50.forEach(producto => {
+    console.log(`Nombre: ${producto.nombre}`);
+    console.log(`Precio: ${producto.precio}`);});
