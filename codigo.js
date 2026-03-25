@@ -218,7 +218,7 @@ console.log("EJ12");
 console.log(`Deberia devolver Juan, Pedro: ${soloAdultos(usuarios).map(usuario => " " + usuario.nombre)}`);
 
 
-//EJ 12//
+//EJ 13//
 function sumaEdades(usuarios) {
     return usuarios.reduce((total, usuario) => { return total + usuario.edad;}, 0);
 }
@@ -227,3 +227,19 @@ console.log("EJ13");
 console.log("Deberia devolver 72: " + sumaEdades(usuarios));
 
 
+//EJ 16//
+
+function buscarProducto(productos, nombre) {
+    for (let i = 0; i < productos.length; i++) {
+        if (productos[i].nombre === nombre) {
+            return productos[i];
+        }
+    }
+}
+console.log(" ");
+console.log("EJ16");
+const producto = buscarProducto(productos, "Teclado");
+
+console.log(`Deberia devolver nombre Teclado, precio 25:
+Nombre: ${producto.nombre}
+Precio: ${producto.precio}`);
