@@ -256,3 +256,14 @@ console.log(`Debería devolver nombre Monitor, precio 200:`);
 mas50.forEach(producto => {
     console.log(`Nombre: ${producto.nombre}`);
     console.log(`Precio: ${producto.precio}`);});
+
+
+    //EJ18//
+
+function promedio(numeros) {
+    return numeros.reduce((acc, num) => acc + num, 0) / numeros.length;
+}
+console.log(" ");
+console.log("EJ17");
+console.log(`Debería devolver 8.25: ${promedio([10, 8, 6, 9])}`);
+
